@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/_next/static/css/51e203f69fe232bf.css"
+      data-precedence="next"
+    />
+    <link
+      rel="preload"
+      as="script"
+      fetchpriority="low"
+      href="/_next/static/chunks/webpack-492248bb394f345c.js"
+    />
+    <script
+      src="/_next/static/chunks/2200cc46-63c87b2287aa26a6.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/945-3473fec9a918c4e4.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/main-app-3f5023c545cc220c.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/7f2e7b14-55fe42798529256f.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/1be152e0-6b0b60c2a2edc1e1.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/992-3c40f8ee88fe3473.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/797-8dd69aa9e8de8e2b.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/page-fc32e6e715e49a54.js"
+      async=""
+    ></script>
+    <script
+      src="/_next/static/chunks/app/layout-34cdb3511c78d5d6.js"
+      async=""
+    ></script>
+    <title>设备预览图生成工具</title>
+    <meta
+      name="description"
+      content="上传壁纸，一键生成 iPhone / iPad / 电脑设备预览图"
+    />
+    <link
+      rel="icon"
+      href="/icon.png?0bbe36df9da0579d"
+      type="image/png"
+      sizes="256x256"
+    />
+    <script
+      src="/_next/static/chunks/polyfills-42372ed130431b0a.js"
+      nomodule=""
+    ></script>
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true">
+      <div class="aurora-blob aurora-1"></div>
+      <div class="aurora-blob aurora-2"></div>
+      <div class="aurora-blob aurora-3"></div>
+      <div class="aurora-blob aurora-4"></div>
+      <div class="aurora-curtain"></div>
+    </div>
+    <div class="min-h-screen">
+      <div class="border-b border-white/10 bg-background/85 backdrop-blur">
+        <div class="mx-auto max-w-6xl px-4 pb-4">
+          <header>
+            <div class="flex items-center gap-3 py-3">
+              <div class="min-w-0 flex-1">
+                <h1 class="truncate text-lg font-bold text-foreground">
+                  🖼️ 设备预览图生成工具
+                </h1>
+                <p class="hidden text-xs text-muted-foreground sm:block">
+                  本月已生成 0 / 15 张
+                </p>
+              </div>
+              <span class="inline-block" data-state="closed"
+                ><button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-8 px-3 text-xs shrink-0 rounded-full"
+                  disabled=""
+                >
+                  下载全部 ZIP
+                </button></span
+              >
+              <div
+                role="group"
+                aria-label="语言"
+                class="flex shrink-0 items-center rounded-full border border-white/15 bg-white/5 p-0.5 text-xs font-semibold"
+              >
+                <button
+                  type="button"
+                  aria-pressed="true"
+                  class="rounded-full px-2.5 py-1 transition bg-brand-500 text-white"
+                >
+                  中</button
+                ><button
+                  type="button"
+                  aria-pressed="false"
+                  class="rounded-full px-2.5 py-1 transition text-muted-foreground hover:text-foreground"
+                >
+                  EN
+                </button>
+              </div>
+              <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-primary/90 h-8 px-3 text-xs shrink-0 rounded-full bg-gradient-to-r from-rose-500 to-rose-600 text-white hover:from-rose-600 hover:to-rose-700"
+              >
+                ☕ 打赏支持
+              </button>
+            </div>
+          </header>
+          <div
+            role="button"
+            tabindex="0"
+            aria-label="上传图片"
+            class="cursor-pointer rounded-card border-2 border-dashed px-6 py-12 text-center transition border-white/20 bg-card/60 hover:border-primary/60 hover:bg-white/5"
+          >
+            <input
+              type="file"
+              accept="image/jpeg,image/png,image/webp"
+              multiple=""
+              class="hidden"
+            />
+            <div class="text-4xl">📤</div>
+            <p class="mt-3 font-medium text-foreground">
+              点击选择或拖拽多张壁纸到这里
+            </p>
+            <p class="mt-1 text-xs text-muted-foreground">
+              支持 JPG / PNG / WEBP，图片保存在浏览器本地（IndexedDB）
+            </p>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true" class="h-px"></div>
+      <button
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 w-10 fixed bottom-6 right-6 z-40 rounded-full shadow-lg transition-all duration-300 pointer-events-none translate-y-2 opacity-0"
+        aria-label="返回顶部"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-arrow-up"
+          aria-hidden="true"
+        >
+          <path d="m5 12 7-7 7 7"></path>
+          <path d="M12 19V5"></path>
+        </svg>
+      </button>
+      <section class="sticky top-0 z-30 mx-auto max-w-6xl px-4"></section>
+      <main class="mx-auto max-w-6xl px-4 pt-6">
+        <p class="py-10 text-center text-sm text-muted-foreground">
+          还没有图片，先上传几张壁纸吧～
+        </p>
+      </main>
+    </div>
+    <section
+      aria-label="Notifications alt+T"
+      tabindex="-1"
+      aria-live="polite"
+      aria-relevant="additions text"
+      aria-atomic="false"
+      data-react-aria-top-layer="true"
+    ></section>
+    <script
+      src="/_next/static/chunks/webpack-492248bb394f345c.js"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+      self.__next_f.push([2, null]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:HL["/_next/static/css/51e203f69fe232bf.css","style"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '2:I[2433,[],""]\n4:I[7523,[],"ClientPageRoot"]\n5:I[3692,["725","static/chunks/7f2e7b14-55fe42798529256f.js","349","static/chunks/1be152e0-6b0b60c2a2edc1e1.js","992","static/chunks/992-3c40f8ee88fe3473.js","797","static/chunks/797-8dd69aa9e8de8e2b.js","931","static/chunks/app/page-fc32e6e715e49a54.js"],"default",1]\n6:I[8408,["992","static/chunks/992-3c40f8ee88fe3473.js","185","static/chunks/app/layout-34cdb3511c78d5d6.js"],"I18nProvider"]\n7:I[176,[],""]\n8:I[9414,[],""]\n9:I[6974,["992","static/chunks/992-3c40f8ee88fe3473.js","185","static/chunks/app/layout-34cdb3511c78d5d6.js"],"Toaster"]\nb:I[8528,[],""]\nc:[]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '0:["$","$L2",null,{"buildId":"MVhEQ_zbFahkkbmAGmsn3","assetPrefix":"","urlParts":["",""],"initialTree":["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"initialSeedData":["",{"children":["__PAGE__",{},[["$L3",["$","$L4",null,{"props":{"params":{},"searchParams":{}},"Component":"$5"}],null],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/51e203f69fe232bf.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"dark","children":["$","body",null,{"children":[["$","div",null,{"className":"aurora","aria-hidden":"true","children":[["$","div",null,{"className":"aurora-blob aurora-1"}],["$","div",null,{"className":"aurora-blob aurora-2"}],["$","div",null,{"className":"aurora-blob aurora-3"}],["$","div",null,{"className":"aurora-blob aurora-4"}],["$","div",null,{"className":"aurora-curtain"}]]}],["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}],["$","$L9",null,{}]]}]}]],null],null],"couldBeIntercepted":false,"initialHead":[null,"$La"],"globalErrorComponent":"$b","missingSlots":"$Wc"}]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'a:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"设备预览图生成工具"}],["$","meta","3",{"name":"description","content":"上传壁纸，一键生成 iPhone / iPad / 电脑设备预览图"}],["$","link","4",{"rel":"icon","href":"/icon.png?0bbe36df9da0579d","type":"image/png","sizes":"256x256"}]]\n3:null\n',
+      ]);
+    </script>
+  </body>
+</html>
